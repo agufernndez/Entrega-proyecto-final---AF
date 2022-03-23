@@ -18,8 +18,11 @@
 .saludo {
   height: 60vh;
   background-color: #9E8282;
+  color: white;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
 
 .turno {
   height: 60vh;
@@ -43,3 +46,17 @@
     align-items: center; }
     .turno .ylisto .ylistop {
       font-size: xx-large; }
+
+.antesydespues, .productos, .consultas, .contactoyubicacion {
+  height: 90vh;
+  margin-top: 15px; }
+  .antesydespues .pantesydespues, .antesydespues .pproductos, .antesydespues .pconsultas, .antesydespues .pcontactoyubicacion, .productos .pantesydespues, .productos .pproductos, .productos .pconsultas, .productos .pcontactoyubicacion, .consultas .pantesydespues, .consultas .pproductos, .consultas .pconsultas, .consultas .pcontactoyubicacion, .contactoyubicacion .pantesydespues, .contactoyubicacion .pproductos, .contactoyubicacion .pconsultas, .contactoyubicacion .pcontactoyubicacion {
+    height: 30vh;
+    background-color: #9E8282;
+    color: white;
+    font-size: 120px;
+    display: flex;
+    justify-content: center; }
+
+.formularioconsultas {
+  margin: 15px; }

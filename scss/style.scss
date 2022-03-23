@@ -6,8 +6,11 @@
 .saludo {
     height: 60vh;
     background-color: $rosaviejo;
+    color: white;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .turno {
@@ -29,6 +32,7 @@
             width: auto;
         }
     }
+
     .ylisto{
             display: flex;
             justify-content: center;
@@ -37,4 +41,20 @@
                 font-size: xx-large;
             }
     }
+}
+.antesydespues, .productos, .consultas, .contactoyubicacion {
+    height: 90vh;
+    margin-top: 15px;
+    .pantesydespues,  .pproductos, .pconsultas, .pcontactoyubicacion {
+        height: 30vh;
+        background-color: $rosaviejo;
+        color: white;
+        font-size: $titulosize;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.formularioconsultas {
+    margin: 15px;
 }
