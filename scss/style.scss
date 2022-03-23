@@ -1,0 +1,40 @@
+@import "header";
+@import "variables";
+@import "reset";
+
+// INDEX - MAIN
+.saludo {
+    height: 60vh;
+    background-color: $rosaviejo;
+    display: flex;
+    flex-direction: row;
+}
+
+.turno {
+    height: 60vh;
+    background-color: $grisclaro;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .imagenesturno {
+        height: 40vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .imgt1, .imgt2, .imgt3 {
+            height: 30vh;
+            width: auto;
+        }
+    }
+    .ylisto{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .ylistop {
+                font-size: xx-large;
+            }
+    }
+}

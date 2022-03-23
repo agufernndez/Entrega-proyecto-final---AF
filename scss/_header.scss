@@ -1,0 +1,17 @@
+@import "variables";
+
+.containerheader {
+    height: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    .logocontainer {
+        height: 15vh;
+        width: auto;
+    }
+    
+    .listainfocontainer {
+        list-style: none;
+        }
+}

@@ -1,0 +1,45 @@
+.containerheader {
+  height: 20vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center; }
+  .containerheader .logocontainer {
+    height: 15vh;
+    width: auto; }
+  .containerheader .listainfocontainer {
+    list-style: none; }
+
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box; }
+
+.saludo {
+  height: 60vh;
+  background-color: #9E8282;
+  display: flex;
+  flex-direction: row; }
+
+.turno {
+  height: 60vh;
+  background-color: #EBE9E6;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  .turno .imagenesturno {
+    height: 40vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .turno .imagenesturno .imgt1, .turno .imagenesturno .imgt2, .turno .imagenesturno .imgt3 {
+      height: 30vh;
+      width: auto; }
+  .turno .ylisto {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .turno .ylisto .ylistop {
+      font-size: xx-large; }
