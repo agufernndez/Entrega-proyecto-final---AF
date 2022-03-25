@@ -15,14 +15,36 @@
   margin: 0%;
   box-sizing: border-box; }
 
+@font-face {
+  font-family: bodoni;
+  src: url(../font/bodoni-bd-bt/BodonBd.ttf); }
+
+@font-face {
+  font-family: raleway thin;
+  src: url(../font/Raleway-Thin.ttf); }
+
 .saludo {
-  height: 60vh;
+  height: 80vh;
   background-color: #9E8282;
   color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center; }
+  .saludo .hello {
+    font-size: 250px;
+    font-family: bodoni;
+    justify-content: center;
+    align-items: center; }
+  .saludo .subhello {
+    font-size: 20px;
+    font-family: raleway thin;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; }
+  .saludo .tratamientos, .saludo .product, .saludo .ymas {
+    font-size: 30px;
+    width: 200px; }
 
 .turno {
   height: 60vh;
@@ -45,7 +67,7 @@
     justify-content: center;
     align-items: center; }
     .turno .ylisto .ylistop {
-      font-size: xx-large; }
+      font-size: 30px; }
 
 .antesydespues, .productos, .consultas, .contactoyubicacion {
   height: 90vh;
@@ -55,6 +77,7 @@
     background-color: #9E8282;
     color: white;
     font-size: 120px;
+    font-family: bodoni;
     display: flex;
     justify-content: center; }
 

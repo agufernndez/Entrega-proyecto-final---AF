@@ -2,15 +2,43 @@
 @import "variables";
 @import "reset";
 
+@font-face {
+    font-family: bodoni;
+    src: url(../font/bodoni-bd-bt/BodonBd.ttf);
+}
+@font-face {
+    font-family: raleway thin;
+    src: url(../font/Raleway-Thin.ttf);
+}
+
 // INDEX - MAIN
 .saludo {
-    height: 60vh;
+    height: 80vh;
     background-color: $rosaviejo;
     color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+
+    .hello {
+        font-size: 250px;
+        font-family: bodoni;
+        justify-content: center;
+        align-items: center;
+    }
+    .subhello {
+        font-size: 20px;
+        font-family: raleway thin;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .tratamientos , .product , .ymas {
+        font-size: 30px;
+        width: 200px;
+    }
+
 }
 
 .turno {
@@ -38,7 +66,7 @@
             justify-content: center;
             align-items: center;
             .ylistop {
-                font-size: xx-large;
+                font-size: 30px;
             }
     }
 }
@@ -50,6 +78,7 @@
         background-color: $rosaviejo;
         color: white;
         font-size: $titulosize;
+        font-family: bodoni;
         display: flex;
         justify-content: center;
     }
