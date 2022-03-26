@@ -35,7 +35,8 @@
     font-size: 250px;
     font-family: bodoni;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    transform: translate(50px, 40px); }
   .saludo .subhello {
     font-size: 20px;
     font-family: raleway thin;
