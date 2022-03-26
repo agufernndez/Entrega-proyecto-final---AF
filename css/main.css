@@ -7,6 +7,11 @@
   .containerheader .logocontainer {
     height: 15vh;
     width: auto; }
+  .containerheader .nav-item {
+    transition: 2s; }
+    .containerheader .nav-item:hover {
+      transform: scale(1.1);
+      text-decoration-line: underline; }
   .containerheader .listainfocontainer {
     list-style: none; }
 
@@ -35,16 +40,25 @@
     font-size: 250px;
     font-family: bodoni;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    transition: 2s; }
+    .saludo .hello:hover {
+      transform: translateY(40px); }
   .saludo .subhello {
     font-size: 20px;
     font-family: raleway thin;
     display: flex;
     justify-content: center;
-    align-items: flex-start; }
+    align-items: flex-start;
+    transition: 2s; }
+    .saludo .subhello:hover {
+      transform: scale(1.2); }
   .saludo .tratamientos, .saludo .product, .saludo .ymas {
     font-size: 30px;
-    width: 200px; }
+    width: 200px;
+    transition: 2s; }
+    .saludo .tratamientos:hover, .saludo .product:hover, .saludo .ymas:hover {
+      transform: scale(1.2); }
 
 .turno {
   height: 60vh;
@@ -57,17 +71,24 @@
   .turno .imagenesturno {
     height: 40vh;
     display: flex;
-    justify-content: space-around;
-    align-items: center; }
+    align-items: center;
+    transition: 2s; }
+    .turno .imagenesturno:hover {
+      transform: scale(1.1); }
     .turno .imagenesturno .imgt1, .turno .imagenesturno .imgt2, .turno .imagenesturno .imgt3 {
       height: 30vh;
-      width: auto; }
+      width: auto;
+      display: flex;
+      justify-content: space-between; }
   .turno .ylisto {
     display: flex;
     justify-content: center;
     align-items: center; }
     .turno .ylisto .ylistop {
-      font-size: 30px; }
+      font-size: 30px;
+      transition: 2s; }
+      .turno .ylisto .ylistop:hover {
+        transform: scale(1.1); }
 
 .antesydespues, .productos, .consultas, .contactoyubicacion {
   height: 90vh;
@@ -79,7 +100,10 @@
     font-size: 120px;
     font-family: bodoni;
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    transition: 2s; }
+    .antesydespues .pantesydespues:hover, .antesydespues .pproductos:hover, .antesydespues .pconsultas:hover, .antesydespues .pcontactoyubicacion:hover, .productos .pantesydespues:hover, .productos .pproductos:hover, .productos .pconsultas:hover, .productos .pcontactoyubicacion:hover, .consultas .pantesydespues:hover, .consultas .pproductos:hover, .consultas .pconsultas:hover, .consultas .pcontactoyubicacion:hover, .contactoyubicacion .pantesydespues:hover, .contactoyubicacion .pproductos:hover, .contactoyubicacion .pconsultas:hover, .contactoyubicacion .pcontactoyubicacion:hover {
+      transform: scale(1.1); }
 
 .formularioconsultas {
   margin: 15px; }

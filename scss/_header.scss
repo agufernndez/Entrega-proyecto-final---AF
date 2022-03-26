@@ -10,8 +10,17 @@
         height: 15vh;
         width: auto;
     }
+
+    .nav-item {
+        transition: 2s;
+        &:hover{
+            transform: scale(1.1);
+            text-decoration-line: underline;
+        }
+    }
     
     .listainfocontainer {
         list-style: none;
         }
+
 }

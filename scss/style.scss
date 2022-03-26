@@ -26,22 +26,32 @@
         font-family: bodoni;
         justify-content: center;
         align-items: center;
-        // transform: translate(50px, 40px);
-    }
+        transition: 2s;
+            &:hover{
+                transform:translateY(40px)
+        }
+
+        }
+    
     .subhello {
         font-size: 20px;
         font-family: raleway thin;
         display: flex;
         justify-content: center;
         align-items: flex-start;
+        transition: 2s;
+        &:hover{
+            transform: scale(1.2);
+        }
     }
     .tratamientos , .product , .ymas {
         font-size: 30px;
         width: 200px;
-        // transform: translate(50px, 40px);
-
+        transition: 2s;
+        &:hover{
+            transform: scale(1.2);
+        }
     }
-
 }
 
 .turno {
@@ -56,11 +66,17 @@
     .imagenesturno {
         height: 40vh;
         display: flex;
-        justify-content: space-around;
         align-items: center;
+        transition: 2s;
+        &:hover{
+            transform: scale(1.1);
+        }
+        
         .imgt1, .imgt2, .imgt3 {
             height: 30vh;
             width: auto;
+            display: flex;
+            justify-content: space-between;
         }
     }
 
@@ -68,11 +84,17 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            
             .ylistop {
                 font-size: 30px;
+                transition: 2s;
+                &:hover{
+                transform: scale(1.1);
+                }
             }
     }
 }
+
 .antesydespues, .productos, .consultas, .contactoyubicacion {
     height: 90vh;
     margin-top: 15px;
@@ -84,6 +106,10 @@
         font-family: bodoni;
         display: flex;
         justify-content: center;
+        transition: 2s;
+                &:hover{
+                transform: scale(1.1);
+                }
     }
 }
 
