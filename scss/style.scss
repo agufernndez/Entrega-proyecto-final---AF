@@ -14,7 +14,8 @@
 // INDEX - MAIN
 .saludo {
     height: 80vh;
-    background-color: $rosaviejo;
+    background-image: url("../images/Fondohello.jpg");
+    background-size:cover;
     color: white;
     display: flex;
     flex-direction: row;
@@ -22,10 +23,11 @@
     align-items: center;
 
     .hello {
-        font-size: 250px;
+        font-size: 230px;
         font-family: bodoni;
+        display: flex;
         justify-content: center;
-        align-items: center;
+        align-items:flex-end;
         transition: 2s;
             &:hover{
                 transform:translateY(40px)
@@ -34,19 +36,23 @@
         }
     
     .subhello {
-        font-size: 20px;
-        font-family: raleway thin;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
+        font-size: 40px;
+        width: 600px;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
         transition: 2s;
         &:hover{
-            transform: scale(1.2);
+            transform: scale(1.1);
         }
     }
     .tratamientos , .product , .ymas {
         font-size: 30px;
+        font-family: raleway thin;
         width: 200px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         transition: 2s;
         &:hover{
             transform: scale(1.2);
@@ -96,16 +102,16 @@
 }
 
 .antesydespues, .productos, .consultas, .contactoyubicacion {
-    height: 90vh;
     margin-top: 15px;
     .pantesydespues,  .pproductos, .pconsultas, .pcontactoyubicacion {
-        height: 30vh;
+        height: 25vh;
         background-color: $rosaviejo;
         color: white;
         font-size: $titulosize;
         font-family: bodoni;
         display: flex;
         justify-content: center;
+        align-items: center;
         transition: 2s;
                 &:hover{
                 transform: scale(1.1);
@@ -113,6 +119,19 @@
     }
 }
 
-.formularioconsultas {
-    margin: 15px;
+.formularioymockup {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+    
+    .formularioconsultas {
+        margin: 15px;
+    }
+    .mockup {
+        height: 450px;
+        width: auto;
+        margin: 15px;
+
+    }
 }
+

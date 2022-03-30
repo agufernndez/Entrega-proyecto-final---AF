@@ -30,32 +30,35 @@
 
 .saludo {
   height: 80vh;
-  background-color: #9E8282;
+  background-image: url("../images/Fondohello.jpg");
+  background-size: cover;
   color: white;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center; }
   .saludo .hello {
-    font-size: 250px;
+    font-size: 230px;
     font-family: bodoni;
+    display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     transition: 2s; }
     .saludo .hello:hover {
       transform: translateY(40px); }
   .saludo .subhello {
-    font-size: 20px;
-    font-family: raleway thin;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    font-size: 40px;
+    width: 600px;
     transition: 2s; }
     .saludo .subhello:hover {
-      transform: scale(1.2); }
+      transform: scale(1.1); }
   .saludo .tratamientos, .saludo .product, .saludo .ymas {
     font-size: 30px;
+    font-family: raleway thin;
     width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     transition: 2s; }
     .saludo .tratamientos:hover, .saludo .product:hover, .saludo .ymas:hover {
       transform: scale(1.2); }
@@ -91,19 +94,26 @@
         transform: scale(1.1); }
 
 .antesydespues, .productos, .consultas, .contactoyubicacion {
-  height: 90vh;
   margin-top: 15px; }
   .antesydespues .pantesydespues, .antesydespues .pproductos, .antesydespues .pconsultas, .antesydespues .pcontactoyubicacion, .productos .pantesydespues, .productos .pproductos, .productos .pconsultas, .productos .pcontactoyubicacion, .consultas .pantesydespues, .consultas .pproductos, .consultas .pconsultas, .consultas .pcontactoyubicacion, .contactoyubicacion .pantesydespues, .contactoyubicacion .pproductos, .contactoyubicacion .pconsultas, .contactoyubicacion .pcontactoyubicacion {
-    height: 30vh;
+    height: 25vh;
     background-color: #9E8282;
     color: white;
     font-size: 120px;
     font-family: bodoni;
     display: flex;
     justify-content: center;
+    align-items: center;
     transition: 2s; }
     .antesydespues .pantesydespues:hover, .antesydespues .pproductos:hover, .antesydespues .pconsultas:hover, .antesydespues .pcontactoyubicacion:hover, .productos .pantesydespues:hover, .productos .pproductos:hover, .productos .pconsultas:hover, .productos .pcontactoyubicacion:hover, .consultas .pantesydespues:hover, .consultas .pproductos:hover, .consultas .pconsultas:hover, .consultas .pcontactoyubicacion:hover, .contactoyubicacion .pantesydespues:hover, .contactoyubicacion .pproductos:hover, .contactoyubicacion .pconsultas:hover, .contactoyubicacion .pcontactoyubicacion:hover {
       transform: scale(1.1); }
 
-.formularioconsultas {
-  margin: 15px; }
+.formularioymockup {
+  display: grid;
+  grid-template-columns: 50% 50%; }
+  .formularioymockup .formularioconsultas {
+    margin: 15px; }
+  .formularioymockup .mockup {
+    height: 450px;
+    width: auto;
+    margin: 15px; }
