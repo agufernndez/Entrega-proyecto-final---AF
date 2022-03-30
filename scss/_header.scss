@@ -1,4 +1,8 @@
 @import "variables";
+@font-face {
+    font-family: raleway thin;
+    src: url(../font/Raleway-Thin.ttf);
+}
 
 .containerheader {
     height: 20vh;
@@ -19,8 +23,14 @@
         }
     }
     
-    .listainfocontainer {
-        list-style: none;
-        }
+    .infocontainer {
+        font-family: raleway thin;
+
+
+        .listainfocontainer {
+            list-style: none;
+            }
+    }
+    
 
 }

@@ -1,3 +1,7 @@
+@font-face {
+  font-family: raleway thin;
+  src: url(../font/Raleway-Thin.ttf); }
+
 .containerheader {
   height: 20vh;
   display: flex;
@@ -12,8 +16,10 @@
     .containerheader .nav-item:hover {
       transform: scale(1.1);
       text-decoration-line: underline; }
-  .containerheader .listainfocontainer {
-    list-style: none; }
+  .containerheader .infocontainer {
+    font-family: raleway thin; }
+    .containerheader .infocontainer .listainfocontainer {
+      list-style: none; }
 
 * {
   padding: 0%;
@@ -117,3 +123,8 @@
     height: 450px;
     width: auto;
     margin: 15px; }
+
+.contactoyubicacion2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: #EBE9E6; }

@@ -122,6 +122,7 @@
 .formularioymockup {
     display: grid;
     grid-template-columns: 50% 50%;
+
     
     
     .formularioconsultas {
@@ -133,5 +134,11 @@
         margin: 15px;
 
     }
+}
+
+.contactoyubicacion2 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: $grisclaro;
 }
 
