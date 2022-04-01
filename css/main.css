@@ -114,6 +114,10 @@
     .antesydespues .pantesydespues:hover, .antesydespues .pproductos:hover, .antesydespues .pconsultas:hover, .antesydespues .pcontactoyubicacion:hover, .productos .pantesydespues:hover, .productos .pproductos:hover, .productos .pconsultas:hover, .productos .pcontactoyubicacion:hover, .consultas .pantesydespues:hover, .consultas .pproductos:hover, .consultas .pconsultas:hover, .consultas .pcontactoyubicacion:hover, .contactoyubicacion .pantesydespues:hover, .contactoyubicacion .pproductos:hover, .contactoyubicacion .pconsultas:hover, .contactoyubicacion .pcontactoyubicacion:hover {
       transform: scale(1.1); }
 
+.imgayd {
+  height: 500px;
+  width: auto; }
+
 .formularioymockup {
   display: grid;
   grid-template-columns: 50% 50%; }
