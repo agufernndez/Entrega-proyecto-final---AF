@@ -134,7 +134,7 @@
         margin: 15px;
     }
     .mockup {
-        height: 350px;
+        height: 450px;
         width: auto;
         margin: 15px;
 
@@ -145,5 +145,37 @@
     display: grid;
     grid-template-columns: 50% 50%;
     background-color: $grisclaro;
+    .mapa {
+        margin: 40px;
+
+    }
+    .textocontactoyubicacion {
+        margin: 40px;
+        font-size: 17px;
+        font-family: raleway thin;
+    }
+    
 }
 
+// SOBRE MI
+.mainsobremi {
+    background-color: $grisclaro;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    .texto {
+        margin: 30px;
+        font-size: 17px;
+        font-family: raleway thin;
+    }
+    .fotosobremi {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // margin-top: 15px;
+        
+        .imgsobremi {
+            height: 500px;
+        }
+    }
+}
