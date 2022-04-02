@@ -1,0 +1,22 @@
+@import "variables";
+@font-face {
+    font-family: raleway thin;
+    src: url(../font/Raleway-Thin.ttf);
+}
+
+.footer {
+    background-color: $rosaviejo;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .footerp {
+        font-family: raleway thin;
+        font-size: 15px;
+        color: $grisclaro;
+        display: flex;
+        align-items: center;
+
+    }
+}

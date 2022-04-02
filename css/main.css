@@ -27,6 +27,23 @@
   box-sizing: border-box; }
 
 @font-face {
+  font-family: raleway thin;
+  src: url(../font/Raleway-Thin.ttf); }
+
+.footer {
+  background-color: #9E8282;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .footer .footerp {
+    font-family: raleway thin;
+    font-size: 15px;
+    color: #EBE9E6;
+    display: flex;
+    align-items: center; }
+
+@font-face {
   font-family: bodoni;
   src: url(../font/bodoni-bd-bt/BodonBd.ttf); }
 
@@ -116,14 +133,16 @@
       transform: scale(1.1); }
 
 .formularioymockup {
-  display: grid;
-  grid-template-columns: 50% 50%; }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px; }
   .formularioymockup .formularioconsultas {
-    margin: 15px; }
+    width: 600px; }
   .formularioymockup .mockup {
-    height: 450px;
-    width: auto;
-    margin: 15px; }
+    height: 400px;
+    width: auto; }
 
 .contactoyubicacion2 {
   display: grid;
@@ -134,7 +153,10 @@
   .contactoyubicacion2 .textocontactoyubicacion {
     margin: 40px;
     font-size: 17px;
-    font-family: raleway thin; }
+    font-family: raleway thin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
 
 .mainsobremi {
   background-color: #EBE9E6;
