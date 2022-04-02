@@ -103,10 +103,10 @@
     }
 }
 
-.antesydespues, .productos, .consultas, .contactoyubicacion {
+.antesydespues, .sobremi, .productos, .consultas, .contactoyubicacion {
     margin-top: 15px;
 
-    .pantesydespues,  .pproductos, .pconsultas, .pcontactoyubicacion {
+    .pantesydespues, .psobremi, .pproductos, .pconsultas, .pcontactoyubicacion {
         height: 15vh;
         background-color: $rosaviejo;
         color: white;
@@ -159,7 +159,6 @@
         flex-direction: column;
         justify-content: center;
     }
-    
 }
 
 // SOBRE MI
