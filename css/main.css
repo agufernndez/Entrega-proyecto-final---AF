@@ -32,15 +32,13 @@
 
 .footer {
   background-color: #9E8282;
-  height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+  height: 5vh; }
   .footer .footerp {
     font-family: raleway thin;
     font-size: 15px;
     color: #EBE9E6;
     display: flex;
+    justify-content: center;
     align-items: center; }
 
 @font-face {
