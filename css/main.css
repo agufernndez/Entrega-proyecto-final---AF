@@ -226,10 +226,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    margin-top: 10px; }
     .contactoyubicacion2 .mapa {
       width: 450px;
       margin-top: 10px;
       margin: 0px; }
     .contactoyubicacion2 .textocontactoyubicacion {
-      margin: 10px; } }
+      margin: 10px; }
+  .mainsobremi {
+    display: grid;
+    grid-template-columns: 100%; } }

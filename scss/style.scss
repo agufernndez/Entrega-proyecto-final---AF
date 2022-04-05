@@ -262,6 +262,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 10px;
 
     .mapa {
         width: 450px;
@@ -275,7 +276,11 @@
 }
 
 // SOBRE MI
+.mainsobremi {
+    display: grid;
+    grid-template-columns: 100%;
 
+}
 
 
 
