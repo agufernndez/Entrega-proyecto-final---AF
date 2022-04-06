@@ -76,7 +76,9 @@
     transition: 3s; }
     .saludo .subhello:hover {
       transform: scale(1.1); }
-  .saludo .tratamientos, .saludo .product, .saludo .ymas {
+  .saludo .tratamientos,
+  .saludo .product,
+  .saludo .ymas {
     font-size: 25px;
     font-family: raleway thin;
     width: 200px;
@@ -84,7 +86,9 @@
     justify-content: space-between;
     align-items: center;
     transition: 3s; }
-    .saludo .tratamientos:hover, .saludo .product:hover, .saludo .ymas:hover {
+    .saludo .tratamientos:hover,
+    .saludo .product:hover,
+    .saludo .ymas:hover {
       transform: scale(1.1); }
 
 .turno {
@@ -102,7 +106,9 @@
     transition: 2s; }
     .turno .imagenesturno:hover {
       transform: scale(1.1); }
-    .turno .imagenesturno .imgt1, .turno .imagenesturno .imgt2, .turno .imagenesturno .imgt3 {
+    .turno .imagenesturno .imgt1,
+    .turno .imagenesturno .imgt2,
+    .turno .imagenesturno .imgt3 {
       height: 20vh;
       width: auto;
       display: flex;
@@ -118,9 +124,37 @@
       .turno .ylisto .ylistop:hover {
         transform: scale(1.1); }
 
-.antesydespues, .sobremi, .productos, .consultas, .contactoyubicacion {
+.antesydespues,
+.sobremi,
+.productos,
+.consultas,
+.contactoyubicacion {
   margin-top: 15px; }
-  .antesydespues .pantesydespues, .antesydespues .psobremi, .antesydespues .pproductos, .antesydespues .pconsultas, .antesydespues .pcontactoyubicacion, .sobremi .pantesydespues, .sobremi .psobremi, .sobremi .pproductos, .sobremi .pconsultas, .sobremi .pcontactoyubicacion, .productos .pantesydespues, .productos .psobremi, .productos .pproductos, .productos .pconsultas, .productos .pcontactoyubicacion, .consultas .pantesydespues, .consultas .psobremi, .consultas .pproductos, .consultas .pconsultas, .consultas .pcontactoyubicacion, .contactoyubicacion .pantesydespues, .contactoyubicacion .psobremi, .contactoyubicacion .pproductos, .contactoyubicacion .pconsultas, .contactoyubicacion .pcontactoyubicacion {
+  .antesydespues .pantesydespues,
+  .antesydespues .psobremi,
+  .antesydespues .pproductos,
+  .antesydespues .pconsultas,
+  .antesydespues .pcontactoyubicacion,
+  .sobremi .pantesydespues,
+  .sobremi .psobremi,
+  .sobremi .pproductos,
+  .sobremi .pconsultas,
+  .sobremi .pcontactoyubicacion,
+  .productos .pantesydespues,
+  .productos .psobremi,
+  .productos .pproductos,
+  .productos .pconsultas,
+  .productos .pcontactoyubicacion,
+  .consultas .pantesydespues,
+  .consultas .psobremi,
+  .consultas .pproductos,
+  .consultas .pconsultas,
+  .consultas .pcontactoyubicacion,
+  .contactoyubicacion .pantesydespues,
+  .contactoyubicacion .psobremi,
+  .contactoyubicacion .pproductos,
+  .contactoyubicacion .pconsultas,
+  .contactoyubicacion .pcontactoyubicacion {
     height: 15vh;
     background-color: #9E8282;
     color: white;
@@ -130,7 +164,31 @@
     justify-content: center;
     align-items: center;
     transition: 3s; }
-    .antesydespues .pantesydespues:hover, .antesydespues .psobremi:hover, .antesydespues .pproductos:hover, .antesydespues .pconsultas:hover, .antesydespues .pcontactoyubicacion:hover, .sobremi .pantesydespues:hover, .sobremi .psobremi:hover, .sobremi .pproductos:hover, .sobremi .pconsultas:hover, .sobremi .pcontactoyubicacion:hover, .productos .pantesydespues:hover, .productos .psobremi:hover, .productos .pproductos:hover, .productos .pconsultas:hover, .productos .pcontactoyubicacion:hover, .consultas .pantesydespues:hover, .consultas .psobremi:hover, .consultas .pproductos:hover, .consultas .pconsultas:hover, .consultas .pcontactoyubicacion:hover, .contactoyubicacion .pantesydespues:hover, .contactoyubicacion .psobremi:hover, .contactoyubicacion .pproductos:hover, .contactoyubicacion .pconsultas:hover, .contactoyubicacion .pcontactoyubicacion:hover {
+    .antesydespues .pantesydespues:hover,
+    .antesydespues .psobremi:hover,
+    .antesydespues .pproductos:hover,
+    .antesydespues .pconsultas:hover,
+    .antesydespues .pcontactoyubicacion:hover,
+    .sobremi .pantesydespues:hover,
+    .sobremi .psobremi:hover,
+    .sobremi .pproductos:hover,
+    .sobremi .pconsultas:hover,
+    .sobremi .pcontactoyubicacion:hover,
+    .productos .pantesydespues:hover,
+    .productos .psobremi:hover,
+    .productos .pproductos:hover,
+    .productos .pconsultas:hover,
+    .productos .pcontactoyubicacion:hover,
+    .consultas .pantesydespues:hover,
+    .consultas .psobremi:hover,
+    .consultas .pproductos:hover,
+    .consultas .pconsultas:hover,
+    .consultas .pcontactoyubicacion:hover,
+    .contactoyubicacion .pantesydespues:hover,
+    .contactoyubicacion .psobremi:hover,
+    .contactoyubicacion .pproductos:hover,
+    .contactoyubicacion .pconsultas:hover,
+    .contactoyubicacion .pcontactoyubicacion:hover {
       transform: scale(1.1); }
 
 .formularioymockup {
@@ -192,7 +250,9 @@
         transform: scale(1.2); }
     .saludo .subhello {
       width: 400px; }
-    .saludo .tratamientos, .saludo .product, .saludo .ymas {
+    .saludo .tratamientos,
+    .saludo .product,
+    .saludo .ymas {
       font-size: 20px; }
   .turno {
     height: 60vh; }
@@ -204,10 +264,36 @@
       transition: 2s; }
       .turno .imagenesturno:hover {
         transform: scale(1); }
-      .turno .imagenesturno .imgt1, .turno .imagenesturno .imgt2, .turno .imagenesturno .imgt3 {
+      .turno .imagenesturno .imgt1,
+      .turno .imagenesturno .imgt2,
+      .turno .imagenesturno .imgt3 {
         height: 15vh;
         margin-top: 10px; }
-  .antesydespues .pantesydespues, .antesydespues .psobremi, .antesydespues .pproductos, .antesydespues .pconsultas, .antesydespues .pcontactoyubicacion, .sobremi .pantesydespues, .sobremi .psobremi, .sobremi .pproductos, .sobremi .pconsultas, .sobremi .pcontactoyubicacion, .productos .pantesydespues, .productos .psobremi, .productos .pproductos, .productos .pconsultas, .productos .pcontactoyubicacion, .consultas .pantesydespues, .consultas .psobremi, .consultas .pproductos, .consultas .pconsultas, .consultas .pcontactoyubicacion, .contactoyubicacion .pantesydespues, .contactoyubicacion .psobremi, .contactoyubicacion .pproductos, .contactoyubicacion .pconsultas, .contactoyubicacion .pcontactoyubicacion {
+  .antesydespues .pantesydespues,
+  .antesydespues .psobremi,
+  .antesydespues .pproductos,
+  .antesydespues .pconsultas,
+  .antesydespues .pcontactoyubicacion,
+  .sobremi .pantesydespues,
+  .sobremi .psobremi,
+  .sobremi .pproductos,
+  .sobremi .pconsultas,
+  .sobremi .pcontactoyubicacion,
+  .productos .pantesydespues,
+  .productos .psobremi,
+  .productos .pproductos,
+  .productos .pconsultas,
+  .productos .pcontactoyubicacion,
+  .consultas .pantesydespues,
+  .consultas .psobremi,
+  .consultas .pproductos,
+  .consultas .pconsultas,
+  .consultas .pcontactoyubicacion,
+  .contactoyubicacion .pantesydespues,
+  .contactoyubicacion .psobremi,
+  .contactoyubicacion .pproductos,
+  .contactoyubicacion .pconsultas,
+  .contactoyubicacion .pcontactoyubicacion {
     height: 8vh;
     font-size: 50px; }
   .formularioymockup {
@@ -237,3 +323,37 @@
   .mainsobremi {
     display: grid;
     grid-template-columns: 100%; } }
+
+@media screen and (max-width: 480px) {
+  .antesydespues .pantesydespues,
+  .antesydespues .psobremi,
+  .antesydespues .pproductos,
+  .antesydespues .pconsultas,
+  .antesydespues .pcontactoyubicacion,
+  .sobremi .pantesydespues,
+  .sobremi .psobremi,
+  .sobremi .pproductos,
+  .sobremi .pconsultas,
+  .sobremi .pcontactoyubicacion,
+  .productos .pantesydespues,
+  .productos .psobremi,
+  .productos .pproductos,
+  .productos .pconsultas,
+  .productos .pcontactoyubicacion,
+  .consultas .pantesydespues,
+  .consultas .psobremi,
+  .consultas .pproductos,
+  .consultas .pconsultas,
+  .consultas .pcontactoyubicacion,
+  .contactoyubicacion .pantesydespues,
+  .contactoyubicacion .psobremi,
+  .contactoyubicacion .pproductos,
+  .contactoyubicacion .pconsultas,
+  .contactoyubicacion .pcontactoyubicacion {
+    height: 8vh;
+    font-size: 40px; }
+  .formularioymockup .formularioconsultas {
+    width: 300px; }
+  .formularioymockup .mockup {
+    height: auto;
+    width: 300px; } }
