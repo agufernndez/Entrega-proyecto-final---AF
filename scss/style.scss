@@ -297,6 +297,9 @@
   .mainsobremi {
     display: grid;
     grid-template-columns: 100%;
+      .imgsobremi {
+        margin-bottom: 20px;
+      }
   }
 }
 

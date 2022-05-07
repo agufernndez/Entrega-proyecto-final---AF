@@ -20,6 +20,9 @@
     font-family: raleway thin; }
     .containerheader .infocontainer .listainfocontainer {
       list-style: none; }
+      .containerheader .infocontainer .listainfocontainer .insta {
+        text-decoration: none;
+        color: black; }
 
 * {
   padding: 0%;
@@ -32,14 +35,17 @@
 
 .footer {
   background-color: #9E8282;
-  height: 5vh; }
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
   .footer .footerp {
     font-family: raleway thin;
     font-size: 15px;
     color: #EBE9E6;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    margin-top: 15px; }
 
 @font-face {
   font-family: bodoni;
@@ -322,7 +328,9 @@
       margin: 10px; }
   .mainsobremi {
     display: grid;
-    grid-template-columns: 100%; } }
+    grid-template-columns: 100%; }
+    .mainsobremi .imgsobremi {
+      margin-bottom: 20px; } }
 
 @media screen and (max-width: 480px) {
   .antesydespues .pantesydespues,

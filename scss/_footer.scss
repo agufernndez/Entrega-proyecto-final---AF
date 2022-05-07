@@ -6,7 +6,10 @@
 
 .footer {
     background-color: $rosaviejo;
-    height: 5vh;
+    height: 5vh;    
+    display: flex;
+        justify-content: center;
+        align-items: center;
 
     .footerp {
         font-family: raleway thin;
@@ -14,7 +17,7 @@
         color: $grisclaro;
         display: flex;
         justify-content: center;
-        align-items: center;
+        margin-top: 15px;
 
     }
 }
