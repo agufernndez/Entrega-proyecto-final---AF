@@ -1,0 +1,617 @@
+@font-face {
+  font-family: raleway thin;
+  src: url(../font/Raleway-Thin.ttf);
+}
+
+.containerheader {
+  height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.containerheader .logocontainer {
+  height: 10vh;
+  width: auto;
+}
+
+.containerheader .nav-item {
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.containerheader .nav-item:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.containerheader .infocontainer {
+  font-family: raleway thin;
+}
+
+.containerheader .infocontainer .listainfocontainer {
+  list-style: none;
+}
+
+.containerheader .infocontainer .listainfocontainer .insta {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  padding: 0%;
+  margin: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: raleway thin;
+  src: url(../font/Raleway-Thin.ttf);
+}
+
+.footer {
+  background-color: #9E8282;
+  height: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footerp {
+  font-family: raleway thin;
+  font-size: 15px;
+  color: #EBE9E6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15px;
+}
+
+@font-face {
+  font-family: bodoni;
+  src: url(../font/bodoni-bd-bt/BodonBd.ttf);
+}
+
+@font-face {
+  font-family: raleway thin;
+  src: url(../font/Raleway-Thin.ttf);
+}
+
+.saludo {
+  height: 60vh;
+  background-image: url("../images/Fondohello.jpg");
+  background-size: cover;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.saludo .hello {
+  font-size: 150px;
+  font-family: bodoni;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.saludo .hello:hover {
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
+}
+
+.saludo .subhello {
+  font-size: 20px;
+  width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.saludo .subhello:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.saludo .tratamientos,
+.saludo .product,
+.saludo .ymas {
+  font-size: 25px;
+  font-family: raleway thin;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.saludo .tratamientos:hover,
+.saludo .product:hover,
+.saludo .ymas:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.turno {
+  height: 40vh;
+  background-color: #EBE9E6;
+  margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.turno .imagenesturno {
+  height: 40vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.turno .imagenesturno:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.turno .imagenesturno .imgt1,
+.turno .imagenesturno .imgt2,
+.turno .imagenesturno .imgt3 {
+  height: 20vh;
+  width: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.turno .ylisto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.turno .ylisto .ylistop {
+  font-family: raleway thin;
+  font-size: 25px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.turno .ylisto .ylistop:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.antesydespues,
+.sobremi,
+.productos,
+.consultas,
+.contactoyubicacion {
+  margin-top: 15px;
+}
+
+.antesydespues .pantesydespues,
+.antesydespues .psobremi,
+.antesydespues .pproductos,
+.antesydespues .pconsultas,
+.antesydespues .pcontactoyubicacion,
+.sobremi .pantesydespues,
+.sobremi .psobremi,
+.sobremi .pproductos,
+.sobremi .pconsultas,
+.sobremi .pcontactoyubicacion,
+.productos .pantesydespues,
+.productos .psobremi,
+.productos .pproductos,
+.productos .pconsultas,
+.productos .pcontactoyubicacion,
+.consultas .pantesydespues,
+.consultas .psobremi,
+.consultas .pproductos,
+.consultas .pconsultas,
+.consultas .pcontactoyubicacion,
+.contactoyubicacion .pantesydespues,
+.contactoyubicacion .psobremi,
+.contactoyubicacion .pproductos,
+.contactoyubicacion .pconsultas,
+.contactoyubicacion .pcontactoyubicacion {
+  height: 15vh;
+  background-color: #9E8282;
+  color: white;
+  font-size: 70px;
+  font-family: bodoni;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.antesydespues .pantesydespues:hover,
+.antesydespues .psobremi:hover,
+.antesydespues .pproductos:hover,
+.antesydespues .pconsultas:hover,
+.antesydespues .pcontactoyubicacion:hover,
+.sobremi .pantesydespues:hover,
+.sobremi .psobremi:hover,
+.sobremi .pproductos:hover,
+.sobremi .pconsultas:hover,
+.sobremi .pcontactoyubicacion:hover,
+.productos .pantesydespues:hover,
+.productos .psobremi:hover,
+.productos .pproductos:hover,
+.productos .pconsultas:hover,
+.productos .pcontactoyubicacion:hover,
+.consultas .pantesydespues:hover,
+.consultas .psobremi:hover,
+.consultas .pproductos:hover,
+.consultas .pconsultas:hover,
+.consultas .pcontactoyubicacion:hover,
+.contactoyubicacion .pantesydespues:hover,
+.contactoyubicacion .psobremi:hover,
+.contactoyubicacion .pproductos:hover,
+.contactoyubicacion .pconsultas:hover,
+.contactoyubicacion .pcontactoyubicacion:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.formularioymockup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 15px;
+}
+
+.formularioymockup .formularioconsultas {
+  width: 600px;
+}
+
+.formularioymockup .mockup {
+  height: 400px;
+  width: auto;
+}
+
+.contactoyubicacion2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  background-color: #EBE9E6;
+}
+
+.contactoyubicacion2 .mapa {
+  margin: 40px;
+}
+
+.contactoyubicacion2 .textocontactoyubicacion {
+  margin: 40px;
+  font-size: 17px;
+  font-family: raleway thin;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.imgcarrousel {
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainsobremi {
+  background-color: #EBE9E6;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.mainsobremi .texto {
+  margin: 30px;
+  font-size: 17px;
+  font-family: raleway thin;
+}
+
+.mainsobremi .fotosobremi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainsobremi .fotosobremi .imgsobremi {
+  height: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .saludo {
+    height: 80vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .saludo .hello {
+    font-size: 100px;
+    -webkit-transition: 3s;
+    transition: 3s;
+  }
+  .saludo .hello:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  .saludo .subhello {
+    width: 400px;
+  }
+  .saludo .tratamientos,
+  .saludo .product,
+  .saludo .ymas {
+    font-size: 20px;
+  }
+  .turno {
+    height: 60vh;
+  }
+  .turno .imagenesturno {
+    height: 60vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: 2s;
+    transition: 2s;
+  }
+  .turno .imagenesturno:hover {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  .turno .imagenesturno .imgt1,
+  .turno .imagenesturno .imgt2,
+  .turno .imagenesturno .imgt3 {
+    height: 15vh;
+    margin-top: 10px;
+  }
+  .antesydespues .pantesydespues,
+  .antesydespues .psobremi,
+  .antesydespues .pproductos,
+  .antesydespues .pconsultas,
+  .antesydespues .pcontactoyubicacion,
+  .sobremi .pantesydespues,
+  .sobremi .psobremi,
+  .sobremi .pproductos,
+  .sobremi .pconsultas,
+  .sobremi .pcontactoyubicacion,
+  .productos .pantesydespues,
+  .productos .psobremi,
+  .productos .pproductos,
+  .productos .pconsultas,
+  .productos .pcontactoyubicacion,
+  .consultas .pantesydespues,
+  .consultas .psobremi,
+  .consultas .pproductos,
+  .consultas .pconsultas,
+  .consultas .pcontactoyubicacion,
+  .contactoyubicacion .pantesydespues,
+  .contactoyubicacion .psobremi,
+  .contactoyubicacion .pproductos,
+  .contactoyubicacion .pconsultas,
+  .contactoyubicacion .pcontactoyubicacion {
+    height: 8vh;
+    font-size: 50px;
+  }
+  .formularioymockup {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 15px;
+  }
+  .formularioymockup .formularioconsultas {
+    width: 450px;
+  }
+  .formularioymockup .mockup {
+    height: auto;
+    width: 450px;
+    margin-top: 10px;
+  }
+  .contactoyubicacion2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 10px;
+  }
+  .contactoyubicacion2 .mapa {
+    width: 450px;
+    margin-top: 10px;
+    margin: 0px;
+  }
+  .contactoyubicacion2 .textocontactoyubicacion {
+    margin: 10px;
+  }
+  .mainsobremi {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
+  }
+  .mainsobremi .imgsobremi {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .antesydespues .pantesydespues,
+  .antesydespues .psobremi,
+  .antesydespues .pproductos,
+  .antesydespues .pconsultas,
+  .antesydespues .pcontactoyubicacion,
+  .sobremi .pantesydespues,
+  .sobremi .psobremi,
+  .sobremi .pproductos,
+  .sobremi .pconsultas,
+  .sobremi .pcontactoyubicacion,
+  .productos .pantesydespues,
+  .productos .psobremi,
+  .productos .pproductos,
+  .productos .pconsultas,
+  .productos .pcontactoyubicacion,
+  .consultas .pantesydespues,
+  .consultas .psobremi,
+  .consultas .pproductos,
+  .consultas .pconsultas,
+  .consultas .pcontactoyubicacion,
+  .contactoyubicacion .pantesydespues,
+  .contactoyubicacion .psobremi,
+  .contactoyubicacion .pproductos,
+  .contactoyubicacion .pconsultas,
+  .contactoyubicacion .pcontactoyubicacion {
+    height: 8vh;
+    font-size: 40px;
+  }
+  .formularioymockup .formularioconsultas {
+    width: 300px;
+  }
+  .formularioymockup .mockup {
+    height: auto;
+    width: 300px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

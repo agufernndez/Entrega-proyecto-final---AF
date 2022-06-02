@@ -67,7 +67,9 @@ campoConsul.onchange=()=>{
     console.log(`Consulta de ${campoNyA.value.toUpperCase()}: ${campoConsul.value}`)
 }
 
-
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// carrito de produtos para la proxima entrega sin falta.
+// storage para proxima entrega sin falta
 
 
 
