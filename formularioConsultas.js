@@ -1,30 +1,13 @@
-// *******DOM*******
-console.dir(document.body.children);
-
-// OBTENET EL VALOR DE LABEL CON EL ID (es mas largo)
-
-// let textoArribaLabel1 = document.getElementById("textoArribaLabel1");
-// console.log(textoArribaLabel1.innerHTML);
-
-// let textoArribaLabel2 = document.getElementById("textoArribaLabel2");
-// console.log(textoArribaLabel2.innerHTML);
-
-// let textoArribaLabel3 = document.getElementById("textoArribaLabel3");
-// console.log(textoArribaLabel3.innerHTML);
-
-// let textoArribaLabel4 = document.getElementById("textoArribaLabel4");
-// console.log(textoArribaLabel4.innerHTML);
-
 
 // FOR OF CON EL NOMBRE DE LA ETIQUETA LABEL (mas corto) PARA OBTENER EL VALOR DE CADA LABEL.
 let textosLabels = document.getElementsByTagName("label");
 console.log(textosLabels);
 for (const textoLabels of textosLabels) {
-    console.log(textoLabels.innerHTML); /*con inner.HTML se ve asi*/
-    console.log(textoLabels); /*sin inner.HTML se ve asi*/
+    console.log(textoLabels.innerHTML); /*con inner.HTML se ve el texto*/
+    console.log(textoLabels); /*sin inner.HTML se ve con todo el contenido de html*/
 }
 
-// CONTENIDO DE LOS INPUTS
+// CONTENIDO EN HTML DE TODOS LOS INPUTS
 let contenidoInput=document.getElementsByTagName("input");
 console.log(contenidoInput);
 
