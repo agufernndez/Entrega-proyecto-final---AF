@@ -15,20 +15,26 @@ console.log(contenidoInput);
 // INPUT (si cuando esta escribiendo en nombre y apellido ingresa numeros =que se ponga en ROJO)
 let campoNyA = document.getElementById("exampleFormControlInput1");
 campoNyA.oninput=()=>{
-    if (!isNaN(campoNyA.value))
-    campoNyA.style.color="red";
-    else{
-        campoNyA.style.color="black";
-    }
+    // OPERADOR TERNARIO
+    (!isNaN(campoNyA.value))?campoNyA.style.color="red":campoNyA.style.color="black";
+
+    // if (!isNaN(campoNyA.value))
+    // campoNyA.style.color="red";
+    // else{
+    //     campoNyA.style.color="black";
+    // }
 }
 
 let campoCel = document.getElementById("exampleFormControlInput2");
 campoCel.oninput=()=>{
-    if(isNaN(campoCel.value))
-    campoCel.style.color="red";
-    else{
-        campoCel.style.color="black"
-    }
+    // OPERADOR TERNARIO
+    (isNaN(campoCel.value))?campoCel.style.color="red":campoCel.style.color="black";
+
+    // if(isNaN(campoCel.value))
+    // campoCel.style.color="red";
+    // else{
+    //     campoCel.style.color="black"
+    // }
 }
 
 // CHANGE
@@ -50,9 +56,6 @@ campoConsul.onchange=()=>{
     console.log(`Consulta de ${campoNyA.value.toUpperCase()}: ${campoConsul.value}`)
 }
 
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-// carrito de produtos para la proxima entrega sin falta.
-// storage para proxima entrega sin falta
 
 
 
