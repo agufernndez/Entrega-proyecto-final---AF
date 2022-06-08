@@ -19,6 +19,7 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="../images/Logo2-64x64.png" />
     <link rel="stylesheet" href="../css/main.css" />
   </head>
@@ -118,13 +119,15 @@
     </header>
 
     <main >
-      <div class="sobremi">
-        <div class="psobremi">
+      <div class="sobremi" >
+        <div class="psobremi" data-aos="fade-up"
+        data-aos-duration="3000">
           <p>sobre mí</p>
         </div>
       </div>
       <div class="mainsobremi">
-        <div class="texto">
+        <div class="texto" data-aos="fade-up"
+        data-aos-duration="3000">
           <p>
             Hola! Mi nombre es Agustina Fernandez, soy Lic. en Kinesiologia y
             Fisioterapia especializada en el área Dermatofuncional. Si no nos
@@ -156,7 +159,8 @@
           </p>
         </div>
 
-        <div class="fotosobremi">
+        <div class="fotosobremi" data-aos="fade-up"
+        data-aos-duration="3000">
           <img
             src="../images/agustitulo.jpg"
             alt="Foto Titulo"
@@ -170,6 +174,10 @@
       <p class="footerp">COPYRIGHTS AF | CODERHOUSE | 2.022</p>
     </footer>
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
       integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"

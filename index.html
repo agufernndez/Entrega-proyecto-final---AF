@@ -19,8 +19,10 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="images/Logo2-64x64.png" />
     <link rel="stylesheet" href="css/main.css" />
+    
   </head>
 
   <body>
@@ -124,24 +126,31 @@
     <main>
       <div class="saludo">
         <div>
-          <p class="hello">hello!</p>
-          <p class="subhello">
+          <p class="hello" data-aos="fade-up"
+          data-aos-duration="3000" >hello!</p>
+          <p class="subhello" data-aos="fade-up"
+          data-aos-duration="3000">
             ACÁ VAS A ENCONTRAR TODO LO QUE NECESITA TU PIEL.
           </p>
         </div>
         <div>
-          <p class="tratamientos">TRATAMIENTOS FACIALES</p>
+          <p class="tratamientos" data-aos="fade-up"
+          data-aos-duration="3000">TRATAMIENTOS FACIALES</p>
         </div>
         <div>
-          <p class="product">PRODUCTOS PARA TU RUTINA SKIN-CARE</p>
+          <p class="product" data-aos="fade-up"
+          data-aos-duration="3000">PRODUCTOS PARA TU RUTINA SKIN-CARE</p>
         </div>
         <div>
-          <p class="ymas">Y MÁS!</p>
+          <p class="ymas" data-aos="fade-up"
+          data-aos-duration="3000">Y MÁS!</p>
         </div>
       </div>
 
-      <div class="turno">
-        <div class="imagenesturno">
+      <div class="turno" data-aos="fade-up"
+      data-aos-duration="3000">
+        <div class="imagenesturno" data-aos="fade-up"
+        data-aos-duration="3000">
           <img
             src="images/imagenturno1.png"
             alt="Escribinos por Whatsapp"
@@ -159,15 +168,19 @@
           />
         </div>
         <div class="ylisto">
-          <p class="ylistop">Y LISTO! YA TENÉS TU TURNO.</p>
+          <p class="ylistop" data-aos="fade-up"
+          data-aos-duration="3000">Y LISTO! YA TENÉS TU TURNO.</p>
         </div>
       </div>
 
-      <div class="antesydespues">
-        <div class="pantesydespues">
+      <div class="antesydespues" data-aos="fade-up"
+      data-aos-duration="3000">
+        <div class="pantesydespues" data-aos="fade-up"
+        data-aos-duration="3000">
           <p>antes y después</p>
         </div>
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-aos="fade-up"
+        data-aos-duration="3000">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -207,12 +220,14 @@
         </div>
       </div>
 
-      <div class="consultas">
+      <div class="consultas" data-aos="fade-up"
+      data-aos-duration="3000">
         <div class="pconsultas">
           <p>consultas</p>
         </div>
-        <div class="formularioymockup">
-          <div class="formularioconsultas">
+        <div class="formularioymockup" >
+          <div class="formularioconsultas" data-aos="fade-up"
+          data-aos-duration="3000">
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label"
                 >Nombre y Apellido</label
@@ -261,7 +276,8 @@
               <button type="button" class="btn btn-primary">Enviar</button>
             </div>
           </div>
-          <div class="mockup">
+          <div class="mockup" data-aos="fade-up"
+          data-aos-duration="3000">
             <img
               class="mockup"
               src="images/MockupConsultas.jpg"
@@ -271,13 +287,15 @@
         </div>
       </div>
 
-      <div class="contactoyubicacion">
+      <div class="contactoyubicacion" data-aos="fade-up"
+      data-aos-duration="3000">
         <div class="contactoyubicacion">
           <div class="pcontactoyubicacion">
             <p>contacto y ubicación</p>
           </div>
           <div class="contactoyubicacion2">
-            <div>
+            <div data-aos="fade-up"
+            data-aos-duration="3000">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.863923384752!2d-68.06172348488475!3d-38.94993697956256!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33d01e47b607%3A0x8923d42ecb4e8276!2sAvenida%20Argentina%20480%2C%20Q8300%20Neuqu%C3%A9n!5e0!3m2!1ses-419!2sar!4v1648045386033!5m2!1ses-419!2sar"
                 width="600"
@@ -288,7 +306,8 @@
                 class="mapa"
               ></iframe>
             </div>
-            <div class="textocontactoyubicacion">
+            <div class="textocontactoyubicacion" data-aos="fade-up"
+            data-aos-duration="3000">
               <p>Clínica Galatea.</p>
               <p>Av. Argentina 480 - Piso 10.</p>
               <p>Neuquén Capital.</p>
@@ -303,6 +322,11 @@
     <footer class="footer">
       <p class="footerp">COPYRIGHTS AF | CODERHOUSE | 2.022</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"

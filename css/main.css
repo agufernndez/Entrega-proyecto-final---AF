@@ -69,19 +69,13 @@
     font-family: bodoni;
     display: flex;
     justify-content: center;
-    align-items: center;
-    transition: 3s; }
-    .saludo .hello:hover {
-      transform: translateY(40px); }
+    align-items: center; }
   .saludo .subhello {
     font-size: 20px;
     width: 600px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    transition: 3s; }
-    .saludo .subhello:hover {
-      transform: scale(1.1); }
+    align-items: center; }
   .saludo .tratamientos,
   .saludo .product,
   .saludo .ymas {
@@ -90,12 +84,7 @@
     width: 200px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    transition: 3s; }
-    .saludo .tratamientos:hover,
-    .saludo .product:hover,
-    .saludo .ymas:hover {
-      transform: scale(1.1); }
+    align-items: center; }
 
 .turno {
   height: 40vh;
@@ -108,10 +97,7 @@
   .turno .imagenesturno {
     height: 40vh;
     display: flex;
-    align-items: center;
-    transition: 2s; }
-    .turno .imagenesturno:hover {
-      transform: scale(1.1); }
+    align-items: center; }
     .turno .imagenesturno .imgt1,
     .turno .imagenesturno .imgt2,
     .turno .imagenesturno .imgt3 {
@@ -125,10 +111,7 @@
     align-items: center; }
     .turno .ylisto .ylistop {
       font-family: raleway thin;
-      font-size: 25px;
-      transition: 2s; }
-      .turno .ylisto .ylistop:hover {
-        transform: scale(1.1); }
+      font-size: 25px; }
 
 .antesydespues,
 .sobremi,
@@ -170,32 +153,6 @@
     justify-content: center;
     align-items: center;
     transition: 3s; }
-    .antesydespues .pantesydespues:hover,
-    .antesydespues .psobremi:hover,
-    .antesydespues .pproductos:hover,
-    .antesydespues .pconsultas:hover,
-    .antesydespues .pcontactoyubicacion:hover,
-    .sobremi .pantesydespues:hover,
-    .sobremi .psobremi:hover,
-    .sobremi .pproductos:hover,
-    .sobremi .pconsultas:hover,
-    .sobremi .pcontactoyubicacion:hover,
-    .productos .pantesydespues:hover,
-    .productos .psobremi:hover,
-    .productos .pproductos:hover,
-    .productos .pconsultas:hover,
-    .productos .pcontactoyubicacion:hover,
-    .consultas .pantesydespues:hover,
-    .consultas .psobremi:hover,
-    .consultas .pproductos:hover,
-    .consultas .pconsultas:hover,
-    .consultas .pcontactoyubicacion:hover,
-    .contactoyubicacion .pantesydespues:hover,
-    .contactoyubicacion .psobremi:hover,
-    .contactoyubicacion .pproductos:hover,
-    .contactoyubicacion .pconsultas:hover,
-    .contactoyubicacion .pcontactoyubicacion:hover {
-      transform: scale(1.1); }
 
 .formularioymockup {
   display: flex;

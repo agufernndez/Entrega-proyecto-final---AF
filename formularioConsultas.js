@@ -25,6 +25,7 @@ campoNyA.oninput=()=>{
     // }
 }
 
+// INPUT (si cuando esta escribiendo en celular ingresa letras =que se ponga en ROJO)
 let campoCel = document.getElementById("exampleFormControlInput2");
 campoCel.oninput=()=>{
     // OPERADOR TERNARIO
@@ -37,7 +38,7 @@ campoCel.oninput=()=>{
     // }
 }
 
-// CHANGE
+// CHANGE. Cuando se registre el ingreso de un dato que aparezca por consola lo ingresado
 campoNyA.onchange=()=>{
     console.log(`Se agrego nombre y apellido: ${campoNyA.value.toUpperCase()}`)
 };
@@ -54,6 +55,17 @@ campoEmail.onchange=()=>{
 let campoConsul = document.getElementById ("exampleFormControlTextarea1");
 campoConsul.onchange=()=>{
     console.log(`Consulta de ${campoNyA.value.toUpperCase()}: ${campoConsul.value}`)
+}
+
+// SWEET ALERT EN BOTON "ENVIAR" DEL FORMULARIO CONSULTAS
+let boton=document.getElementById("boton");
+boton.onclick=()=>{
+    swal({
+        title: "Tu consulta fue enviada!",
+        text: "Gracias por contactarnos.",
+        icon: "success",
+
+    });
 }
 
 
