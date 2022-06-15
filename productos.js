@@ -1,57 +1,14 @@
-const arrayProductos = [
-    {
-        nombre: "Tonico de Agua de Rosas 100 ml",
-        alt: "Foto Tonico de Agua de Rosas 100 ml",
-        precio: 2500,
-        descripcion: "Refrescante tónico de agua de rosas y azahar. Aporta hidración, frescura y luminosidad. Ideal para aplicar luego de la limpieza y durante el día para refrescar e iluminar el rostro. Para pieles secas, normales, mixtas y sensibles.",
-        img: "../images/aguaderosas.jpeg",
-        cod: 1
-    },
-    {
-        nombre: "Sensitive Milk 100 ml",
-        alt: "Foto Sensitive Milk 100 ml",
-        precio: 2500,
-        descripcion: "Suave leche de limpieza con ingredientes hidratantes y calmantes. Limpia e hidrata. Para pieles normales, secas y sensibles.",
-        img: "../images/sensitive.jpeg",
-        cod: 2
-    },
-    {
-        nombre: "Glicoglow Milk 100 ml",
-        precio: 2500,
-        descripcion: "Emulsión de limpieza con ácido glicólico. Aporta luminosidad y suavidad a la piel. Para pieles normales, mixtas y grasas. Anti-age.",
-        img: "../images/glico100.jpeg",
 
-        cod: 3
+let carritoCompras = [];
+let productosJSON=[];
 
-    },
-    {
-        nombre: "Serum Hialurónico + 100 ml",
-        alt: "Foto Serum Hialurónico + 100 ml",
-        precio: 3500,
-        descripcion: "Serum de hidratación profunda con ácido hialurónico, niacinamida y zinc. Ideal para pieles mixtas/grasas. Se coloca luego de la limpieza. Puede potenciar su efecto colocando una emulsión/crema posterior a él. Aporta mucha hidratacion, regulando la oleosidad de la piel. Luminosidad y suavidad.",
-        img: "../images/hialu100.jpeg",
-        cod: 4
-    },
-    {
-        nombre: "Gold Cream 50 gr",
-        alt:"Foto Gold Cream 50 gr",
-        precio: 3500,
-        descripcion: "Crema anti-age que aporta una hidración profunda. Ideal para pieles maduras y secas. Da luminosidad y mucha suavidad.",
-        img: "../images/gold.jpeg",
-        cod: 5
-    },
-];
-let carrito = [];
-
-
+// **********************************AGREGANDO CARDS DESDE ARCHIVO JSON
 // Imprimo uno por uno los productos en cards.
-imprimirProductosEnHTML (arrayProductos);
 function imprimirProductosEnHTML (){
-    let productosTodosjs = document.getElementById("productosTodos");
-    // console.log(productosTodosjs);
-    for (const producto of arrayProductos) {
+    let productosTodos = document.getElementById("productosTodos");
+    for (const producto of productosJSON) {
     let cardProducto=document.createElement("div");
-    cardProducto.innerHTML =
+    cardProducto.innerHTML +=(
     `
     <div class="card " style="width: 18rem;">
     <img src="${producto.img}" class="card-img-top" alt="${producto.alt}">
@@ -64,47 +21,98 @@ function imprimirProductosEnHTML (){
     </div>
   </div>
 
-    `
+    `)
     ;
-    productosTodosjs.appendChild(cardProducto);
-    // OJO QUE SI PONGO EL APPEND CHILD FUERA DEL FOR, NO ME ENCUENTRA LA VARIABLE DE LA CARD PORQUE ES LOCAL!!!! 
-    }
-
-    // EVENTO PARA CADA BOTON "COMPRAR"
-    arrayProductos.forEach(producto => {
-    document.getElementById(`btn${producto.cod}`).addEventListener(`click`, function(){
-        agregarAlCarrito(producto);
-    });
-});
-}
-
-// se van agregando los productos que pongo "comprar" a la tabla del carrito
-function agregarAlCarrito(productoNuevo) {
-    carrito.push(productoNuevo);
-    console.log(carrito)
-    // pongo alert pero agregar libreria sweet alert
-    alert(`Se ha agregado ${productoNuevo.nombre} con éxito a su carrito `)
+    productosTodos.appendChild(cardProducto);
     
-    document.getElementById("tbody").innerHTML+=
+    }
+    // EVENTO PARA CADA BOTON "COMPRAR"
+    for (const producto of productosJSON) {
+        //Evento para cada boton
+        document.getElementById(`btn${producto.cod}`).onclick= function() {
+           agregarACarrito(producto);
+       };
+   }
+
+}
+
+class ProductoCarrito {
+    constructor(objProd) {
+        this.cod = objProd.cod;
+        this.foto = objProd.img;
+        this.nombre = objProd.nombre;
+        this.precio = objProd.precio;
+        this.descripcion=objProd.descripcion;
+        this.cantidad = 1;
+    }
+}
+
+function agregarACarrito(productoNuevo) {
+    let encontrado = carritoCompras.find(p => p.cod == productoNuevo.cod);
+    console.log(encontrado);
+    if (encontrado == undefined) {
+        let prodACarrito = new ProductoCarrito(productoNuevo);
+        carritoCompras.push(prodACarrito);
+        console.log(carritoCompras);
+        swal("Agregado al carrito", "Tu producto se ha agregado con exito al carrito", "success");
+        //agregamos una nueva fila a la tabla de carrito
+        document.getElementById("tbody").innerHTML+=(
     `
-    <tr>
-        <td>#0${productoNuevo.cod}</td>
-        <td>${productoNuevo.nombre}</td>
-        <td>$${productoNuevo.precio}</td>
-    `
-    // guardo los productos seleccionados en sessionStorage. Cuando se cierra el navegador, se elimina todo.
-    sessionStorage.setItem("carrito",JSON.stringify(productoNuevo));
+            <tr id='fila${prodACarrito.cod}'>
+                <td> #${prodACarrito.cod} </td>
+                <td> ${prodACarrito.nombre}</td>
+                <td id='${prodACarrito.cod}'> ${prodACarrito.cantidad}</td>
+                <td> $${prodACarrito.precio}</td>
+                <td> <button class='btn btn-light' onclick='eliminar(${prodACarrito.cod})'>🗑️</button>
+            </tr>`);
+        
+        // <td> <button class='btn btn-light'         id="boton${prodACarrito.cod}"
+
+        // >🗑️</button>
+
+        
+        // para cada boton eliminar, tengo que hacer un evento.
+        // let boton=document.getElementById(`boton${prodACarrito.cod}`);
+        // for (const producto of productoNuevo){
+        //     boton.onclick=()=>function(){
+        //         eliminarProducto(producto);
+        //     }
+        // }
+        
+        
+    } else {
+        //pido al carro la posicion del producto 
+        let posicion = carritoCompras.findIndex(p => p.cod == productoNuevo.cod);
+        console.log(posicion);
+        carritoCompras[posicion].cantidad += 1;
+        document.getElementById(productoNuevo.cod).innerHTML=carritoCompras[posicion].cantidad;
+    }
+    document.getElementById("totalCarrito").innerText=(`Total: $ ${calcularTotal()}`);
+
+}
+
+function calcularTotal() {
+    let suma = 0;
+    for (const producto of carritoCompras) {
+        suma = suma + (producto.precio * producto.cantidad);
+    }
+    return suma;
+}
+
+function eliminarProducto(cod){
+    let indice=carritoCompras.findIndex(producto => producto.cod==cod);
+    carritoCompras.splice(indice,1);
+    let fila=document.getElementById(`fila${cod}`);
+    document.getElementById("tbody").removeChild(fila);
+    document.getElementById("totalCarrito").innerText=(`Total: $ ${calcularTotal()}`);
 }
 
 
-
-
-
-
-// SPREAD: "desparramo" los objetos del array y dsp muestro por consola el que esta en la posicion 2
-const nombresProductos = {...arrayProductos};
-// console.log(nombresProductos);
-// console.log(nombresProductos[2]); 
-
-
-
+//GETJSON de productos.json
+async function obtenerJSON() {
+    const URLJSON="/productos.json"
+    const resp=await fetch("productos.json")
+    const data= await resp.json()
+    productosJSON = data;
+    imprimirProductosEnHTML();
+}
